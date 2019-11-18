@@ -1,2 +1,2 @@
-python default_cell/install.py
-jupyter nbextension enable --user default_cell
+jupyter nbextension install default_cell --user
+jupyter nbextension enable default_cell/main --user

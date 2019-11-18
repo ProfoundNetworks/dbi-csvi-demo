@@ -21,7 +21,7 @@ function main(Jupyter) {
 
         if (text != '') {
             text = '# Autoinserted, see default_cell/README.md.\n';
-            text += '# Delete this cell before saving the notebook!\n";
+            text += '# Delete this cell before saving the notebook!\n';
             text += text;
             Jupyter.notebook.select(0)
             cell = Jupyter.notebook.insert_cell_below('code')
