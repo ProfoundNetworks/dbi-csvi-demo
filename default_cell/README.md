@@ -24,8 +24,7 @@ First, install the Jupyter Notebook extension functionality:
 Then install the extension:
 
     python default_cell/install.py
-
-The postBuild file does approximately the same thing (it's Binder-specific, though).
+    jupyter nbextension enable --py default_cell
 
 Foro more, see:
 
