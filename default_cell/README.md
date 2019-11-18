@@ -23,8 +23,7 @@ First, install the Jupyter Notebook extension functionality:
 
 Then install the extension:
 
-    python default_cell/install.py
-    jupyter nbextension enable --py default_cell
+    bash postBuild
 
 Foro more, see:
 

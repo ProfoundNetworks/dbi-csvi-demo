@@ -10,6 +10,7 @@ function main(Jupyter) {
         var autorun = false;
         searchParams.forEach(
             function(value, key) {
+                console.debug('value: ' + value + ' key: ' + key);
                 if (key == 'autorun') {
                     autorun = (value == 'true');
                     text += "# autorun: true\n";
@@ -20,9 +21,9 @@ function main(Jupyter) {
         );
 
         if (text != '') {
-            text = '# Autoinserted, see default_cell/README.md.\n';
-            text += '# Delete this cell before saving the notebook!\n';
-            text += text;
+            header = '# Autoinserted, see default_cell/README.md.\n';
+            header += '# Delete this cell before saving the notebook!\n';
+            text = header + text;
             Jupyter.notebook.select(0)
             cell = Jupyter.notebook.insert_cell_below('code')
             cell.set_text(text.substring(0, text.length - 1));
